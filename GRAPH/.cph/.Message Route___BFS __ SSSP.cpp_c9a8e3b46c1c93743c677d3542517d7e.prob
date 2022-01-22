@@ -1,0 +1,1 @@
+{"name":"Local: Message Route___BFS __ SSSP","url":"d:\\Data Structure\\GRAPH\\Message Route___BFS __ SSSP.cpp","tests":[{"id":1632431808466,"input":"5 5\n1 2\n1 3\n1 4\n2 3\n5 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Data Structure\\GRAPH\\Message Route___BFS __ SSSP.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: left rotation and right rotation","url":"d:\\Data Structure\\Array\\left rotation and right rotation.cpp","tests":[{"id":1630861787525,"input":"5\n1 2 3 4 5\n2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Data Structure\\Array\\left rotation and right rotation.cpp","group":"local","local":true}

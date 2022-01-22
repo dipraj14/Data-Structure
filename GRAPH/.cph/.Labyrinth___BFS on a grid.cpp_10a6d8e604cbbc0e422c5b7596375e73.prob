@@ -1,0 +1,1 @@
+{"name":"Local: Labyrinth___BFS on a grid","url":"d:\\Data Structure\\GRAPH\\Labyrinth___BFS on a grid.cpp","tests":[{"id":1632779043075,"input":"5 8\n########\n#.A#...#\n#.##.#B#\n#......#\n########","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Data Structure\\GRAPH\\Labyrinth___BFS on a grid.cpp","group":"local","local":true}

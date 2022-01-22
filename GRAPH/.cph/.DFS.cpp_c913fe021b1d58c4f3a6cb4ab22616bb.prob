@@ -1,0 +1,1 @@
+{"name":"Local: DFS","url":"d:\\Data Structure\\GRAPH\\DFS.cpp","tests":[{"id":1632160917217,"input":"1\n8 9\n1 2\n2 3\n3 4\n4 1\n4 5\n5 8\n8 7\n7 6 \n6 5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Data Structure\\GRAPH\\DFS.cpp","group":"local","local":true}

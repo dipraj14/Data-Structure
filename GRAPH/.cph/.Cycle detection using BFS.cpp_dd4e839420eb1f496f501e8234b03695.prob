@@ -1,0 +1,1 @@
+{"name":"Local: Cycle detection using BFS","url":"d:\\Data Structure\\GRAPH\\Cycle detection using BFS.cpp","tests":[{"id":1632246524129,"input":"2\n5 5\n0 2\n1 2\n1 4\n2 3\n3 4\n\n4 3\n0 1\n1 2\n2 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Data Structure\\GRAPH\\Cycle detection using BFS.cpp","group":"local","local":true}

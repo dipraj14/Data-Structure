@@ -1,0 +1,1 @@
+{"name":"Local: Roads not only in Berland","url":"d:\\Data Structure\\GRAPH\\DSU\\Roads not only in Berland.cpp","tests":[{"id":1638270927492,"input":"7\n1 2\n2 3\n3 1\n4 5\n5 6\n6 7","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Data Structure\\GRAPH\\DSU\\Roads not only in Berland.cpp","group":"local","local":true}

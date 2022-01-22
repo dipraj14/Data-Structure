@@ -1,0 +1,1 @@
+{"name":"Local: NSE","url":"d:\\Data Structure\\stack and Queue\\NSE.cpp","tests":[{"id":1632056866791,"input":"6\n5 6 2 3 1 7","output":"-1 2 -1 5 4 -1 -1 -1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Data Structure\\stack and Queue\\NSE.cpp","group":"local","local":true}
