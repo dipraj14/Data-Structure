@@ -49,7 +49,8 @@ void colourfullarrya(){
     }
 
     reverse(offline_quries.begin(), offline_quries.end());
-    vector<int> colur(n+1, -1);
+//     vector<int> colur(n+1, -1);
+    vector<int> colur(n+1);
     DSU dsu(n+1);
 
     for(auto &it: offline_quries){
@@ -59,9 +60,10 @@ void colourfullarrya(){
 
         int avibSlot = dsu.find_P(r);
         while(avibSlot > 0 && avibSlot >= l){
-            if(colur[avibSlot] == -1){
+//             if(colur[avibSlot] == -1){   // no need to assign -1 all the idx 
+//                 colur[avibSlot] = col;
+//             }
                 colur[avibSlot] = col;
-            }
                //cout << dsu.find_P(avibSlot - 1) <<" " <<avibSlot<<endl;
            dsu.union_s(dsu.find_P(avibSlot - 1), avibSlot);
           // dsu.parent[avibSlot] = dsu.find_P(avibSlot - 1 );
