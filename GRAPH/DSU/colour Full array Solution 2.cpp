@@ -132,7 +132,7 @@ void colourfullarrya(){
     }
 
     reverse(offline_quries.begin(), offline_quries.end());
-    vector<int> colur(n+1, -1);
+    vector<int> colur(n+1);
     DSU dsu(n+1);
 
     for(auto &it: offline_quries){
