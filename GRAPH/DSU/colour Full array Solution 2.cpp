@@ -21,9 +21,9 @@ class DSU{
             return parent[node] = find_P(parent[node]);
         }
        
-        // void union(int u, int v){
-        //   parent[v] = u;
-        // }
+        void union_s(int u, int v){
+          parent[v] = u;
+        }
       
 };
 struct info{
@@ -61,8 +61,8 @@ void colourfullarrya(){
             if(colur[avibSlot] == -1){
                 colur[avibSlot] = col;
             }
-           // dsu.union(dsu.find_P(avibSlot - 1), avibSlot);
-           dsu.parent[avibSlot] = dsu.find_P(avibSlot - 1 );
+           dsu.union_s(dsu.find_P(avibSlot - 1), avibSlot);
+          // dsu.parent[avibSlot] = dsu.find_P(avibSlot - 1 );
             avibSlot = avibSlot - 1;
             
         }
