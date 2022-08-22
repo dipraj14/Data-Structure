@@ -51,3 +51,50 @@ void solve(){
         solve();
     }
 }
+
+/*
+Easy Solution 
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int t;
+    cin >> t;
+    while(t--){
+        int n;
+        cin >> n;
+        
+        int a =1, b =1, c =1;
+        
+        int org_n = n;
+        
+        for(int i=2; i * i <=n; i++){
+            if(n % i == 0){
+                a = i;
+                break;
+            }
+        }
+        n = n / a;
+        for(int i = 2 ; i * i <= n; i++){
+            if(n% i == 0 && i != a){
+                b = i;
+                break;
+            }
+        }
+        
+        c = org_n / (a * b);
+        
+        if(a!= b && b!= c && a != c && a!=1 && b!=1 && c!=1){
+            cout << "YES" << endl;
+            cout << a <<" " << b << " " << c <<endl ;
+        }else{
+            cout <<"NO" << endl;
+        }
+    }
+
+    return 0;
+}
+*/
