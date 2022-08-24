@@ -28,7 +28,9 @@ void createSieve(){
     for(int i=2;i*i<=N;i++){
         if(sieve[i] == true){
             for(int j=i*i ; j<=N ;j = j+i){
+                // if(sieve[j] != false){  // if one guy already marke false no need to make that so this condition // Leave this condition its also work 
                 sieve[j] = false;
+               // }
             }
         }
     }
