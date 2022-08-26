@@ -217,6 +217,12 @@ int main()
 
 
 // Smae Question But better than Segmented Sive Concept and Easy to remember  ---> name ---> prefixPrime() -> 
+// 1 ≤ T ≤ 10^5
+// 1 ≤ L ≤ 10^7
+// 1 ≤ R ≤ 10^7   // this gives TLE if we implemented with Sigmented Sieve Algo 
+
+// https://www.codechef.com/problems/CNTPRIME?tab=statement --> question ---> if we submite using Segment Sive Algo than it give TLE and Partilly Correct Ans
+// BUT if we Submit USing PrefixPrime() is give correct ans 
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -231,7 +237,7 @@ void createSieveAndCalculatePrefixPrime(){
         sieve[i] = 1;
     }
     
-    for(int i = 2 ; i*i <=N; i++){
+    for(int i = 2 ; i*i <=N; i++){   // O(n log(log N)) 
         if(sieve[i] == 1){
             for(int j = i * i ; j<=N; j+=i){
                 if(sieve[j] != 0){
@@ -242,22 +248,25 @@ void createSieveAndCalculatePrefixPrime(){
     }
     
     for(int i = 2; i<=N; i++){
-        prefixPrime[i] = prefixPrime[i - 1] + sieve[i];
+        prefixPrime[i] = prefixPrime[i - 1] + sieve[i];  // (O(N)) 
     }
     
 }
 
 int main() {
     
-    createSieveAndCalculatePrefixPrime();
+    createSieveAndCalculatePrefixPrime();  // O(n log(log N)) + O(N)
     int t;
     cin >> t;
     while(t--){
         int l , r;
         cin >> l >> r;
-        cout << prefixPrime[r] - prefixPrime[ l - 1 ] << endl;
+        cout << prefixPrime[r] - prefixPrime[ l - 1 ] << endl;  // O(1)
         
     }
+	
+	// overAll --> O(n log(log N)) + O(N) + O(t * 1 ) 
+	// ----------> //10^7 + 10^7 + 10^5 ----> its runs with it one second ....So better Run Time is Compare to Segmented Sieve
 	return 0;
 }
 
