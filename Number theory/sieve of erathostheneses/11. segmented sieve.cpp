@@ -94,7 +94,7 @@ int main()
         // print 
         
         for(int i = l; i<=r; i++){  // 110 - > 0  // 111 - > 1 // 112 -> 2 //  
-            if(dummy[i - l] == 1){
+            if(dummy[i - l] == 1 && i != 1){  // i != 1 because 1 was not a prime number and 1 <= l thats why // 1 10 --> for this test case first number print 1 so i check i != 1
                 cout << i <<" ";
             }
         }
