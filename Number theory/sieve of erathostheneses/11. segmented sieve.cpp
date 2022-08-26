@@ -112,7 +112,7 @@
 
 // Print all the Prime number Between L - R Segmrnt 
 
-#include <bits/stdc++.h>
+#include <bits/stdc++.h>  // this will work only for 10^6 but pefixPrime() which was work upto 10^7 ----> impleting below
 
 using namespace std;
 
@@ -211,4 +211,55 @@ int main()
 
     return 0;
 }
+
+
+
+
+
+// Smae Question But better than Segmented Sive Concept and Easy to remember  ---> name ---> prefixPrime() -> 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+const int N = 1e7;
+bool sieve[N + 1];
+vector<int> prefixPrime(N + 1);
+
+
+void createSieveAndCalculatePrefixPrime(){
+    for(int i = 2; i<=N; i++){
+        sieve[i] = 1;
+    }
+    
+    for(int i = 2 ; i*i <=N; i++){
+        if(sieve[i] == 1){
+            for(int j = i * i ; j<=N; j+=i){
+                if(sieve[j] != 0){
+                    sieve[j] = 0;
+                }
+            }
+        }
+    }
+    
+    for(int i = 2; i<=N; i++){
+        prefixPrime[i] = prefixPrime[i - 1] + sieve[i];
+    }
+    
+}
+
+int main() {
+    
+    createSieveAndCalculatePrefixPrime();
+    int t;
+    cin >> t;
+    while(t--){
+        int l , r;
+        cin >> l >> r;
+        cout << prefixPrime[r] - prefixPrime[ l - 1 ] << endl;
+        
+    }
+	return 0;
+}
+
+
 
